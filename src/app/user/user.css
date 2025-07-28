@@ -1,0 +1,22 @@
+ul{
+    list-style-type:none;
+}
+.leftSide{
+    width:250px;
+    background-color:rgb(221, 248, 221);
+    height:500px;
+    display:flex;
+     line-height: 1.8;
+     display:flex;
+     
+}
+.imgsForNames{
+    width:30px;
+    height:30px;
+}
+button{
+    width:100px;
+    margin:4px;
+    text-align: center;
+    display:flex;
+}

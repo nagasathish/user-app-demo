@@ -1,0 +1,17 @@
+.headerCls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(140, 172, 140);
+    padding: 20px 40px;
+    height: 100px; 
+}
+button {
+    margin: 0;
+    background-color: rgb(164, 236, 212);
+    height: 40px;
+}
+#userIcon{
+    width:100px;
+    height:100px;
+}

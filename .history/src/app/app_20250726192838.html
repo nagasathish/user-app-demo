@@ -1,0 +1,17 @@
+App Component
+<div class="totalLayout">
+  <app-header></app-header>
+  Received From Child => {{recievedValue}}
+
+  <div class="mainContainer">
+    
+    <app-user (userSelected)="receiveUser($event)" [childValue]="fromParent"></app-user>
+
+    <app-user-details [firstName]="myFirstName" 
+    [selectedUser]="selectedUser" 
+    (lnameEvent)="receiveData($event)" [someNum]="123" (toParent)="printTeja = $event">
+    </app-user-details>
+    <p>{{printTeja}}</p>
+  </div>
+</div>
+

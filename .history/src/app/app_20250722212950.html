@@ -1,0 +1,15 @@
+<div class="totalLayout">
+  <app-header></app-header>
+
+  <div class="mainContainer">
+    
+    <app-user (userSelected)="receiveUser($event)"></app-user>
+
+    <app-user-details [firstName]="myFirstName" 
+    [selectedUser]="selectedUser" 
+    (lnameEvent)="receiveData($event)" [someNum]="123">
+    </app-user-details>
+    <p>{{printTeja}}</p>
+  </div>
+</div>
+

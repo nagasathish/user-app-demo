@@ -1,0 +1,32 @@
+App Component
+<div class="totalLayout">
+  <app-header></app-header>
+
+  <p style="color: blue;">Welcome user on header {{userName}}!</p>
+  
+  Received From Child => {{recievedValue}} **
+
+  <div class="mainContainer">
+    
+    <app-user (userSelected)="receiveUser($event)" [childValue]="fromParent"></app-user>
+
+    <app-user-details [firstName]="myFirstName" 
+    [selectedUser]="selectedUser" 
+    (lnameEvent)="receiveData($event)" [someNum]="123" (toParent)="receiveChildData($event)">
+    </app-user-details>
+    <p>{{printTeja}}</p>
+  </div>
+</div>
+
+
+
+<!-- 
+Component:
+
+ng generate component user-profile
+ng g c user-profile
+
+Services:
+ng generate service user
+
+-->

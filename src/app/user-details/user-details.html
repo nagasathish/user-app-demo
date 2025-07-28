@@ -1,0 +1,108 @@
+User Details Component
+<div style=" font-weight: bold;">
+Welcome {{userName}}!
+</div>
+<img style="width: 80px" [src]="IMAGE_URL" />
+
+<div class="userDetail">
+  <p>user-details</p>
+
+  <div *ngIf="selectedUser" class="user-details-container">
+    <img
+      [src]="'assets/' + selectedUser.avatar"
+      class="imgsForNames"
+      alt="User Avatar"
+    />
+    <h3>Selected User:{{ selectedUser.firstNamename }}</h3>
+    <div id="userData">
+      <div class="user-info-line">
+        <label>First Name:</label><i>{{ selectedUser.firstNamename }}</i>
+      </div>
+      <div class="user-info-line">
+        <label>Last Name:</label><i>{{ selectedUser.LastName }}</i>
+      </div>
+      <div class="user-info-line">
+        <label>Email:</label><i>{{ selectedUser.Email }}</i>
+      </div>
+      <div class="user-info-line">
+        <label>Age:</label><i>{{ selectedUser.Age }}</i>
+      </div>
+      <div class="user-info-line">
+        <label>Gender:</label><i>{{ selectedUser.Gender }}</i>
+      </div>
+      <div class="user-info-line">
+        <label>Date of Birth:</label><i>{{ selectedUser.dob }}</i>
+      </div>
+    </div>
+  </div>
+  Switch Case Example:
+  <ul id="countryList" [ngSwitch]="countryCode" style="border: 1px solid;">
+    <li *ngSwitchCase="'UK'">United Kingdom</li>
+    <li *ngSwitchCase="'US'">United States</li>
+    <li *ngSwitchCase="'IN'">India</li>
+  </ul>
+
+  <span>{{ firstName }}</span>
+  <button (click)="sendLname()">send last name</button>
+  <p>{{ someNum }}</p>
+
+  <!-- Your form code (optional) -->
+</div>
+
+<!-- <div>
+  <p>user-details</p>
+  <div *ngIf="selectedUser">
+    <h3>Selected User:</h3>
+    <p>Name: {{ selectedUser.name }}</p>
+    <img [src]="'assets/' + selectedUser.avatar" class="imgsForNames">
+  </div>
+  <span>{{firstName}}</span>
+  <button (click)="sendLname()">send last name</button>
+  <form>
+    <div class="formInline">
+      <label for="fName">First Name:</label>
+      <input type="text" name="fName" id="fName">
+    </div>
+    <div class="formInline">
+      <label for="lname">Second Name:</label>
+      <input type="text" name="lname" id="lname">
+    </div>
+    <div class="formInline">
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email">
+    </div>
+    <div class="formInline">
+      <label for="age">Age:</label>
+      <input type="number" name="age" id="age">
+    </div>
+    <div class="formInline">
+      <label for="dob">DOB:</label>
+      <input type="date" name="DOB" id="dob">
+    </div>
+    <button onclick="submitBtn()" id="subBtn">submit</button>
+  </form>
+</div> -->
+
+<button (click)="sendToParent()">Send to Parent</button>
+
+<!-- 
+
+[] property binding
+
+() event binding
+{{}} interpolation
+
+Directives
+
+1. Structural Directives
+   - *ngIf
+   - *ngFor
+   - *ngSwitch
+2. Attribute Directives
+   - ngClass 
+    - ngStyle
+    - ngModel
+
+
+
+-->

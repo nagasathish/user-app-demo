@@ -1,0 +1,32 @@
+
+<div class="leftSide">
+  <ul>
+    
+      <li *ngFor="let user of users let i=index">
+        <button (click)="onUserClick(user)">
+          <img [src]="'assets/' +user.avatar" class="imgsForNames">
+          {{user.firstNamename}}
+        </button>
+      </li>
+    
+
+    
+  </ul>
+
+
+</div>
+
+
+
+<!-- <ul>
+ <li><a href="#">{{user1.name}}</a></li>
+ <li><a href="#">{{user2.name}}</a></li>
+ <li><a href="#">{{user3.name}}</a></li>
+ <li><a href="#">{{user4.name}}</a></li>
+ <li><a href="#">{{user5.name}}</a></li>
+ <li><a href="#">{{user6.name}}</a></li>
+</ul> -->
+
+
+   
+
