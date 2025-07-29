@@ -4,11 +4,13 @@ import { User } from "./user/user";
 import { UserDetails } from "./user-details/user-details";
 import { FormsModule } from '@angular/forms';
 import { UserService } from "./services/user.service";
+import { RouterLink, RouterOutlet } from "@angular/router";
+import { CommonModule } from "@angular/common";
 
 @Component({
   selector: "app-root",
   standalone: true,
-  imports: [HeaderComponent, User, UserDetails, FormsModule],
+  imports: [HeaderComponent, User, UserDetails, FormsModule, RouterOutlet, RouterLink, CommonModule],
   templateUrl: "./app.html",
   styleUrls: ["./app.css"],
 })

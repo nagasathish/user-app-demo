@@ -1,21 +1,18 @@
-App Component
 <div class="totalLayout">
   <app-header></app-header>
 
-  <p style="color: blue;">Welcome user on header {{userName}}!</p>
-  
-  Received From Child => {{recievedValue}} **
+  <nav style="color: brown">
+    <a class="nav-link-custom" routerLink="/">Home</a>
+    <a class="nav-link-custom" routerLink="/contact">Contact</a>
+    <a class="nav-link-custom" routerLink="/users">User</a>
+    <a class="nav-link-custom" routerLink="/user/u1">Display U1</a>
 
-  <div class="mainContainer">
-    
-    <app-user (userSelected)="receiveUser($event)" [childValue]="fromParent"></app-user>
+  </nav>
+ 
+  <router-outlet />
 
-    <app-user-details [firstName]="myFirstName" 
-    [selectedUser]="selectedUser" 
-    (lnameEvent)="receiveData($event)" [someNum]="123" (toParent)="receiveChildData($event)">
-    </app-user-details>
-    <p>{{printTeja}}</p>
-  </div>
+
+
 </div>
 
 

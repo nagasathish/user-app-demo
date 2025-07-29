@@ -1,6 +1,10 @@
 <div class="headerCls">
   <img src="assets/download.jpg" id="userIcon" />
   <h2>{{ title }}</h2>
+  <nav style="color: brown">
+    <a class="nav-link-custom" routerLink="/">Home</a>
+    <a class="nav-link-custom" routerLink="/contact">Contact</a>
+  </nav>
   <button onclick="userLogin()">userLogin</button>
   1 way <input type="text" [ngModel]="title" placeholder="1 Way" />
 

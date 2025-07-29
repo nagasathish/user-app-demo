@@ -4,3 +4,10 @@
   
   
 }
+.nav-link-custom {
+    color: blue;
+    text-decoration: none;
+    margin-right: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
